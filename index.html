@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rock Paper Scissors</title>
+	<!--CSS Reset-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!--Bootstrap, if desired-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--Regular Style Sheet-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <header class="text-center">
+        <h1>Rock! Paper! Scissors!</h1>
+    </header>
+
+    <div class="container-fluid text-center">
+        <!--Status Message-->
+        <div class="row regularMsg">
+            <p id="identifyingStatusMsg">Hello, <span>Pikachu</span>! You are Player <span>1</span></p>
+            <p id="statusMsg">ipsum</p>
+        </div>
+        <!--Players Section-->
+        <div class="row">
+            <!--player1-->
+            <div class="col-lg-6" id="player1">
+                <div class="playerSection">
+                    <div class="playerSectionContent">  
+                        <div class="row">
+                            <h3>Player 1: <span>Mario</span></h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="assets/images/placeholder300x200.png" class="img img-responsive">
+                            </div>
+                            <div class="col-lg-2">
+                                <p>Wins: <span>1</span></p>
+                                <p>Losses: <span>3</span></p>
+                            </div>
+                            <div class="col-lg-4">
+                                <ul>
+                                    <li>Rock</li>
+                                    <li>Paper</li>
+                                    <li>Scissors</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+
+            <!--player2-->
+            <div class="col-lg-6" id="player2">
+                <div class="playerSection">
+                    <div class="playerSectionContent">
+                        <div class="row">
+                            <h3>Player 2: <span>Luigi</span></h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="assets/images/placeholder300x200.png" class="img img-responsive">
+                            </div>
+                            <div class="col-lg-2">
+                                <p>Wins: <span>1</span></p>
+                                <p>Losses: <span>3</span></p>
+                            </div>
+                            <div class="col-lg-4">
+                                <ul>
+                                    <li>Rock</li>
+                                    <li>Paper</li>
+                                    <li>Scissors</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!--./Row-->
+    </div> <!--./Container-->
+
+
+	<!--jQuery-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <!--JavaScript-->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
