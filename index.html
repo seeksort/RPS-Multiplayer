@@ -19,15 +19,24 @@
 
     <div class="container-fluid text-center">
         <!--Status Message-->
-        <div class="row regularMsg">
+        <div class="row regularMsg"><p>Welcome! Please enter your name:</p>
+            <div class="col-lg-6 col-lg-offset-3">
+                <form class="form-inline">
+                    <input type="text" class="form-control" id="inputPlayerName" placeholder="Name">
+                    <button type="submit" class="btn btn-default" id="submitName">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="row regularMsg">
             <p id="identifyingStatusMsg">Hello, <span>Pikachu</span>! You are Player <span>1</span></p>
             <p id="statusMsg">ipsum</p>
-        </div>
+        </div> -->
+
         <!--Players Section-->
         <div class="row">
             <!--player1-->
             <div class="col-lg-6" id="player1">
-                <div class="playerSection">
+                <div class="playerSection innerShadow">
                     <div class="playerSectionContent">  
                         <div class="row">
                             <h3>Player 1: <span>Mario</span></h3>
@@ -37,11 +46,11 @@
                                 <img src="assets/images/placeholder300x200.png" class="img img-responsive">
                             </div>
                             <div class="col-lg-2">
-                                <p>Wins: <span>1</span></p>
-                                <p>Losses: <span>3</span></p>
+                                <p>Wins: <span id="p1Wins">0</span></p>
+                                <p>Losses: <span id="p1Losses">0</span></p>
                             </div>
                             <div class="col-lg-4">
-                                <ul>
+                                <ul id="player1Options">
                                     <li>Rock</li>
                                     <li>Paper</li>
                                     <li>Scissors</li>
@@ -54,7 +63,7 @@
 
             <!--player2-->
             <div class="col-lg-6" id="player2">
-                <div class="playerSection">
+                <div class="playerSection innerShadow">
                     <div class="playerSectionContent">
                         <div class="row">
                             <h3>Player 2: <span>Luigi</span></h3>
@@ -64,11 +73,11 @@
                                 <img src="assets/images/placeholder300x200.png" class="img img-responsive">
                             </div>
                             <div class="col-lg-2">
-                                <p>Wins: <span>1</span></p>
-                                <p>Losses: <span>3</span></p>
+                                <p>Wins: <span id="p2Wins">0</span></p>
+                                <p>Losses: <span id="p2Losses">0</span></p>
                             </div>
                             <div class="col-lg-4">
-                                <ul>
+                                <ul id="player2Options">
                                     <li>Rock</li>
                                     <li>Paper</li>
                                     <li>Scissors</li>
@@ -80,6 +89,20 @@
             </div>
 
         </div> <!--./Row-->
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 chatboxContainer innerShadow">
+                <div class="chatboxContent">                  
+                    <p>Character Chat</p>
+                    <div class="col-lg-10 col-lg-offset-1 text-left" id="chatbox">
+                        <p>Text<br>Text</p>
+                    </div>
+                    <form name="message" action="">
+                        <input name="usermsg" type="text" id="usermsg" size="70" />
+                        <input name="submitmsg" type="submit" class="btn btn-default" id="submitmsg" value="Send" />
+                    </form>
+                </div>
+            </div>
+        </div>
     </div> <!--./Container-->
 
 

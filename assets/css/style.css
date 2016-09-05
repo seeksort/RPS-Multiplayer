@@ -5,14 +5,15 @@ Main Styles
 */
 body {
     font-family: 'ChronoType', sans-serif; 
-    background-color: black;
+    background-image: url('../images/chronotrigger.jpg');
     color: #fff;
 }
 h1 {
-    font-size: 4.5em;
+    font-size: 4em;
 }
 h3 {
     font-size: 2.5em;
+    margin-top: 0px;
 }
 p {
     font-size: 2em;
@@ -42,12 +43,44 @@ li {
 li:hover {
     background-color: #4D94FF;
 }
-
+/*
+================
+Chatbox
+================
+*/
+.chatboxContainer {
+    background-color: #0024FF;
+    border: 3px solid #CCE4ED;
+    border-radius: 12px;
+}
+#chatbox {
+    background-color: #CCE4ED;
+    color: #2A1F1F;
+}
+#chatbox > p {
+    font-size: 1.5em;
+}
+.chatboxContent {
+    margin: 6px;
+}
+input {
+    margin: 5px;
+}
+/*
+================
+Sections
+================
+*/
 .playerSection {
     margin: 1em;
     background-color: #0024FF;
     border: 3px solid #CCE4ED;
     border-radius: 12px;
+}
+.innerShadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
 }
 .playerSectionContent {
     margin: 1em;
@@ -62,6 +95,7 @@ Status Messages
 */
 .regularMsg {
     background-color: gray;
+    font-size: 1em;
 }
 .resultMsg {
     background-color: orange;
