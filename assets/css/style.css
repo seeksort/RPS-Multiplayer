@@ -100,3 +100,8 @@ Status Messages
 .resultMsg {
     background-color: orange;
 }
+#player1Options,
+#player2Options,
+.chatboxContainer {
+    display: none;
+}

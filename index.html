@@ -19,13 +19,14 @@
 
     <div class="container-fluid text-center">
         <!--Status Message-->
-        <div class="row regularMsg"><p>Welcome! Please enter your name:</p>
-            <div class="col-lg-6 col-lg-offset-3">
+        <div class="row regularMsg"><p id="identifyingStatusMsg">Welcome! Please enter your name:</p>
+            <div class="col-lg-6 col-lg-offset-3" id="nameInputFormGroup">
                 <form class="form-inline">
                     <input type="text" class="form-control" id="inputPlayerName" placeholder="Name">
                     <button type="submit" class="btn btn-default" id="submitName">Submit</button>
                 </form>
             </div>
+            <p id="statusMsg"></p>
         </div>
         <!-- <div class="row regularMsg">
             <p id="identifyingStatusMsg">Hello, <span>Pikachu</span>! You are Player <span>1</span></p>
@@ -39,7 +40,7 @@
                 <div class="playerSection innerShadow">
                     <div class="playerSectionContent">  
                         <div class="row">
-                            <h3>Player 1: <span>Mario</span></h3>
+                            <h3>Player 1: <span id="displayPlayer1Name"></span></h3>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
@@ -66,7 +67,7 @@
                 <div class="playerSection innerShadow">
                     <div class="playerSectionContent">
                         <div class="row">
-                            <h3>Player 2: <span>Luigi</span></h3>
+                            <h3>Player 2: <span id="displayPlayer2Name"></span></h3>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
@@ -94,11 +95,11 @@
                 <div class="chatboxContent">                  
                     <p>Character Chat</p>
                     <div class="col-lg-10 col-lg-offset-1 text-left" id="chatbox">
-                        <p>Text<br>Text</p>
+                        
                     </div>
                     <form name="message" action="">
-                        <input name="usermsg" type="text" id="usermsg" size="70" />
-                        <input name="submitmsg" type="submit" class="btn btn-default" id="submitmsg" value="Send" />
+                        <input name="userChatMsg" type="text" id="userChatMsg" size="70" />
+                        <input name="submitChat" type="submit" class="btn btn-default" id="submitChat" value="Send"/>
                     </form>
                 </div>
             </div>
