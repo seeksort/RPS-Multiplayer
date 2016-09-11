@@ -56,9 +56,19 @@ Chatbox
 #chatbox {
     background-color: #CCE4ED;
     color: #2A1F1F;
-}
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:25px;
+    padding:10px;
+    height:270px;
+    width:100%;
+    border:1px solid #ACD8F0;
+    overflow:auto; }
 #chatbox > p {
     font-size: 1.5em;
+}
+#userChatMsg {
+    color: #2A1F1F;
 }
 .chatboxContent {
     margin: 6px;
@@ -87,6 +97,9 @@ Sections
 }
 .resultsSection {
     
+}
+.char-img {
+    margin: 0 auto;
 }
 /*
 ================
